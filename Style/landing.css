@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+header {
+    background-color: lightblue;
+    height: 40px;
+    padding: 20px 5px;
+    margin: 0 auto 50px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+    height: 40px;
+    text-align: left;
+    width: 800px;
+}
+
+h2 {
+    border: 1px solid black;
+    float: left;
+    font-size: 1.5rem;
+    height: 40px;
+    text-align: left;
+    width: 20%;
+}
+
+h3 {
+    text-align: center;
+}
+
+.cell {
+    border: 1px solid black;
+    border-collapse: collapse;
+    flex-basis: 150px;
+    height: 150px;
+    text-align: center;
+}
+
+.tableCellName {
+    border: 1px solid black;
+    display: inline-block;
+    margin: 5px 5px 5px 5px;
+}
+
+.tableCellImage {
+    border: 1px solid black;
+    height: 100px;
+    margin-top: 5px;
+    width: 100px;
+}
+
+.headerSmallText {
+    border: 1px solid black;
+    float: right;
+    height: 20px;
+    width: 15%;
+}
+
+#composerSection {
+    background-color: lightblue;
+    border-radius: 10px;
+    margin: 10px;
+    height: 500px;
+    width: 650px;
+}
+
+#composerScrollSection {
+    height: 450px;
+    overflow: auto;
+}
+
+#composerTable {
+    align-content: flex-start;
+    border: solid black 1px;
+    border-collapse: collapse;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 10px 20px;
+    width: 608px;
+}
+
+@media only screen and (max-width: 1320px) {
+    header { 
+        height: 80px;
+    }
+
+    h1 {
+        width: 500px;
+    }
+}
