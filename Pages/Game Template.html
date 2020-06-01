@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="../../Style/game.css" type='text/css'>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+        <title> Game Title </title>
+    </head>
+    <body>
+        <header>
+            <h1 class="pageTitle properName"> Game Title </h1>
+            <a class="backLink" href="../../Pages/landing.html"> Back </a>
+        </header>
+        <main>
+            <table id="infoTable">
+                <thead class="properName">
+                    <tr>
+                        <th colspan = "2">
+                            <strong> Game Title </strong>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="infoTableImageRow" colspan = "2">
+                            <img class="infoTableImage" src="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- These rows are filled automatically using JavaScript -->
+                        <td class="infoTableTDHeadingCol"> Developer: </td>
+                        <td class="infoTableTDInfoCol properName" id="infoTableFirstGame"> <em> TBD </em> </td>
+                    </tr>
+                    <tr>
+                        <td class="infoTableTDHeadingCol"> Publisher: </td>
+                        <td class="infoTableTDInfoCol properName" id="infoTableLastGame"> <em> TBD </em> </td>
+                    </tr>
+                    <tr>
+                        <td class="infoTableTDHeadingCol" id="infoTableYearsActive"> Year Released: </td>
+                        <td class="infoTableTDInfoCol"> TBD </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="descriptionLong">
+                <h2> Game Description </h2>
+                <p class="descriptionText"> TBD </p>
+            </div>
+            <div class="contributorSection">
+                <h2> Soundtrack Contributors </h2>
+                <table class="contributorTable">
+                    <thead>
+                        <tr>
+                            <th class="contributorTableName"> Name </th>
+                            <th class="contributorTablePublisher"> Role </th>
+                        </tr>
+                    </thead>
+                    <tbody id="contributorTableList">
+                        <tr>
+                            <td class="contributorName"> Name </td>
+                            <td class="contributorRole"> Role </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </body>
+</html>
