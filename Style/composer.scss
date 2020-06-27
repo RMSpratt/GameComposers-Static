@@ -1,0 +1,263 @@
+@font-face {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v12/XRXV3I6Li01BKofINeaBTMnFcQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+$pageColor-lightest: hsl(169,26%,85%);      //Accent colour
+$pageColor-light: hsl(169,26%,65%);         //Accent colour
+$pageColor-medium: hsl(169,26%,45%);        //Accent colour
+$pageColor-dark: hsl(169, 26%, 15%);        //Colour used for text
+$pageColor-shadow: hsl(169,26%,30%);        //Colour used for creating a box-shadow effect
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+header {
+    background-color: $pageColor-medium;
+    box-shadow: 0 5px 5px $pageColor-shadow;
+    height: 40px;
+    padding: 20px 5px;
+    margin-bottom: 50px;
+}
+
+h1, h2, h3, h4 {
+    @extend .text;
+}
+
+img {
+    border: 1px solid $pageColor-dark;
+    height: 150px;
+    width: 150px;
+}
+
+li {
+    @extend .text;
+    margin-left: 20px;
+    margin-bottom: 0.5rem;
+}
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+p {
+    @extend .text;
+    margin-bottom: 1rem;
+}
+
+section {
+    background-color: $pageColor-light;
+    border: 2px solid $pageColor-dark;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    padding: 10px 20px;
+}
+
+tr {
+    height: 30px;
+    width: 95%;
+
+    td {
+        border: 1px solid $pageColor-dark;
+        border-collapse: collapse;
+        color: hsl(169, 26%, 17%);
+        padding: 0 5px;
+    }
+    
+    th {
+        border: 1px solid $pageColor-dark;
+        border-collapse: collapse;
+        background-color: $pageColor-medium;
+        color: $pageColor-dark;
+        font-size: 1.25rem;
+        padding: 0 5px;
+        text-align: center;
+    }
+}
+
+.backLink {
+    background-color: $pageColor-lightest;
+    color: $pageColor-dark;
+    border-radius: 5px;
+    float: right;
+    margin-right: 30px;
+    padding: 8px 30px;
+    font-size: 1.25rem;
+    text-align: center;
+    text-decoration: none;
+
+    &:hover {
+        box-shadow: 0 0 8px $pageColor-dark;
+    }
+}
+
+
+/* Bio Section Styling */
+.bioSectionLong {
+    height: 376px;
+    width: 65%;
+}
+
+.bioSectionShort {
+    height: 150px;
+    width: 65%;
+}
+
+.bioText {
+    background-color: $pageColor-lightest;
+    border-radius: 5px;
+    height: 80%;
+    margin-top: 10px;
+    overflow: auto;
+    padding: 5px;
+}
+
+/* Side information table styling */
+#infoTable {
+    background-color: $pageColor-lightest;
+    border: 2px solid $pageColor-dark;
+    border-radius: 5px;
+    float: right;
+    margin-bottom: 30px;
+    min-height: 400px;
+    width: 25%;
+
+    .itHeadingCol {
+        font-weight: 600;
+        width: 40%;
+    }
+
+    .itInfoCol {
+        width: 60%;
+    }
+
+    .itImage {
+        border: 1px solid $pageColor-dark;
+        height: 150px;
+        width: 150px;
+    }
+
+    .itImageRow {
+        height: 160px;
+        text-align: center;
+    }
+}
+
+.pageTitle {
+    border-bottom: 1px solid $pageColor-dark;
+    display: inline-block;
+    height: 40px;
+    margin-left: 20px;
+}
+
+.properName {
+    font-style: italic;
+}
+
+.referencesList {
+    background-color: $pageColor-lightest;
+    border-radius: 5px;
+    margin-top: 10px;
+    overflow: auto;
+    padding: 5px;
+}
+
+.text {
+    color: $pageColor-dark;
+}
+
+/* Composer Works Section Styling */
+.worksTable {
+    background-color: $pageColor-lightest;
+    border: 2px double $pageColor-dark;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+
+    .wtName {
+        width: 35%;
+    }
+    
+    .wtPublisher {
+        width: 35%;
+    }
+    
+    .wtRole {
+        width: 20%;
+    }
+    
+    .wtYear {
+        text-align: center;
+        width: 10%;
+    }
+}
+
+
+/* Media Queries */
+@media only screen and (max-width: 1200px) {
+    .bioSectionLong {
+        width: 60%;
+    } 
+
+    .bioSectionShort {
+        width: 60%;
+    }
+
+    #infoTable {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 725px) {
+    
+    .bioSectionLong {
+        clear: both;
+        height: initial;
+        padding-bottom: 20px;
+        margin: 50px auto;
+        width: 90%;
+    }
+
+    .bioSectionShort {
+        clear: both;
+        height: initial;
+        margin: 50px auto;
+        width: 90%;
+    }
+
+    .bioText {
+        height: initial;
+    }
+
+    #infoTable {
+        margin-bottom: 50px;
+        margin-left: 15%;
+        margin-right: 15%;
+        width: 70%;
+    }
+
+    .worksSection {
+        margin: 50px auto;
+        width: 90%;
+    }
+}

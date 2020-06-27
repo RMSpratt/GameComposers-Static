@@ -7,11 +7,16 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+$pageColor-lightest: hsl(211,26%,85%);      //Accent colour
+$pageColor-light: hsl(211,26%,65%);         //Accent colour
+$pageColor-medium: hsl(211,26%,45%);        //Accent colour
+$pageColor-dark: hsl(211, 26%, 15%);        //Colour used for text
+$pageColor-shadow: hsl(211,26%,30%);        //Colour used for creating a box-shadow effect
+
 * {
     margin: 0;
     padding: 0;
 }
-
 
 html {
     font-family: 'Nunito', sans-serif;
@@ -24,15 +29,15 @@ body {
 }
 
 header {
-    background-color: hsl(211,26%,45%);
-    box-shadow: 0 5px 5px hsl(211,26%,30%);
+    background-color: $pageColor-medium;
+    box-shadow: 0 5px 5px $pageColor-shadow;
     height: 40px;
     padding: 20px 5px;
     margin-bottom: 50px;
 }
 
-h1, h2, h3, h5, p {
-    color: hsl(211, 26%, 15%);
+h1, h2, h3, h4 {
+    @extend .text;
 }
 
 main {
@@ -42,42 +47,43 @@ main {
 }
 
 p {
+    @extend .text;
     margin-bottom: 1rem;
 }
 
 section {
-    background-color: hsl(211,26%,65%);
-    border: 2px solid hsl(211, 26%, 17%);
+    background-color: $pageColor-light;
+    border: 2px solid $pageColor-dark;
     border-radius: 5px;
     margin-bottom: 30px;
     padding: 10px 15px;
 }
 
-td {
-    border: 1px solid hsl(211, 26%, 17%);
-    border-collapse: collapse;
-    color: hsl(211, 26%, 17%);
-    padding: 0 5px;
-}
-
-th {
-    border: 1px solid hsl(211, 26%, 17%);
-    border-collapse: collapse;
-    background-color: hsl(211, 26%, 45%);
-    color: hsl(211, 26%, 17%);
-    font-size: 1.25rem;
-    padding: 0 5px;
-    text-align: center;
-}
-
 tr {
     height: 30px;
     width: 95%;
+
+    td {
+        border: 1px solid $pageColor-dark;
+        border-collapse: collapse;
+        color: $pageColor-dark;
+        padding: 0 5px;
+    }
+    
+    th {
+        border: 1px solid $pageColor-dark;
+        border-collapse: collapse;
+        background-color: $pageColor-medium;
+        color: $pageColor-dark;
+        font-size: 1.25rem;
+        padding: 0 5px;
+        text-align: center;
+    }
 }
 
 .backLink {
-    background-color: hsl(211,26%,85%);
-    color: hsl(211, 26%, 15%);
+    background-color: $pageColor-lightest;
+    color: $pageColor-dark;
     border-radius: 5px;
     float: right;
     margin-right: 30px;
@@ -85,10 +91,10 @@ tr {
     font-size: 1.25rem;
     text-align: center;
     text-decoration: none;
-}
 
-.backLink:hover {
-    box-shadow: 0 0 8px hsl(211, 26%, 17%);
+    &:hover {
+        box-shadow: 0 0 8px $pageColor-dark;
+    }
 }
 
 
@@ -104,7 +110,7 @@ tr {
 }
 
 .descriptionText {
-    background-color: hsl(211,26%,85%);
+    background-color: $pageColor-lightest;
     border-radius: 5px;
     height: 80%;
     margin-top: 10px;
@@ -114,8 +120,8 @@ tr {
 
 /* Side information table styling */
 #infoTable {
-    background-color: hsl(211,26%,85%);
-    border: 2px solid hsl(211, 26%, 17%);
+    background-color: $pageColor-lightest;
+    border: 2px solid $pageColor-dark;
     border-radius: 5px;
     float: right;
     height: 400px;
@@ -134,7 +140,7 @@ tr {
 }
 
 .infoTableImage {
-    border: 1px solid hsl(211, 26%, 17%);
+    border: 1px solid $pageColor-dark;
     height: 150px;
     width: 150px;
 }
@@ -145,7 +151,7 @@ tr {
 }
 
 .pageTitle {
-    border-bottom: 1px solid hsl(211, 26%, 17%);
+    border-bottom: 1px solid $pageColor-dark;
     display: inline-block;
     height: 40px;
     margin-left: 20px;
@@ -156,11 +162,15 @@ tr {
 }
 
 .referencesText {
-    background-color: hsl(169,26%,85%);
+    background-color: $pageColor-lightest;
     border-radius: 5px;
     margin-top: 10px;
     overflow: auto;
     padding: 5px;
+}
+
+.text {
+    color: $pageColor-dark;
 }
 
 /* Music Contributors Section Styling */
@@ -169,8 +179,8 @@ tr {
 }
 
 .contributorTable {
-    background-color: hsl(211,26%,85%);
-    border: 2px double hsl(211, 26%, 17%);
+    background-color: $pageColor-lightest;
+    border: 2px double $pageColor-dark;
     margin-top: 10px;
     margin-bottom: 20px;
     width: 100%;

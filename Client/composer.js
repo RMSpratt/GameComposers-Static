@@ -1,16 +1,13 @@
 function fillSideTable() {
 
-    let condensedTable = document.getElementById('infoTable');
+    let firstGame = document.getElementById('itFirstGame');
+    let latestGame = document.getElementById('itLatestGame');
 
-    let firstGame = document.getElementById('infoTableFirstGame');
-    let lastGame = document.getElementById('infoTableLastGame');
-    let yearsActive = document.getElementById('infoTableYearsActive');
-
-    let composerWorks = document.getElementById('worksTableList');
+    let composerWorks = document.getElementById('wtList');
 
     if (composerWorks.childElementCount != 0) {
         firstGame.innerHTML = composerWorks.firstElementChild.firstElementChild.innerText;
-        lastGame.innerHTML = composerWorks.lastElementChild.firstElementChild.innerText;
+        latestGame.innerHTML = composerWorks.lastElementChild.firstElementChild.innerText;
     }
 }
 

@@ -1,173 +1,171 @@
 @font-face {
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v12/XRXV3I6Li01BKofINeaBTMnFcQ.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Nunito Regular"), local("Nunito-Regular"), url(https://fonts.gstatic.com/s/nunito/v12/XRXV3I6Li01BKofINeaBTMnFcQ.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+22255, U+FEFF, U+FFFD;
+}
+#gameTable, #composerTable {
+  align-content: space-between;
+  background-color: #433960;
+  border: 2px solid #211c30;
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  overflow: auto;
+  width: 95%;
+}
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    width: 100%;
+  width: 100%;
 }
 
 html {
-    font-size: 16px;
-    font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  font-family: "Nunito", sans-serif;
 }
 
 header {
-    background-color: hsl(15,31%,45%);
-    box-shadow: 0 5px 5px hsl(15,31%,30%);
-    height: 40px;
-    padding: 20px 5px;
-    margin: 0 auto 50px;
+  background-color: #645591;
+  box-shadow: 0 5px 5px #433960;
+  height: 40px;
+  padding: 20px 5px;
+  margin: 0 auto 50px;
 }
 
 h1, h2, h3, p {
-    color: hsl(15, 31%, 15%);
+  color: #211c30;
 }
 
 h1 {
-    border-bottom: 1px solid hsl(15, 31%, 15%);
-    display: inline-block;
-    font-size: 2rem;
-    height: 40px;
-    margin-left: 10px;
+  border-bottom: 1px solid #211c30;
+  display: inline-block;
+  font-size: 2rem;
+  height: 40px;
+  margin-left: 10px;
 }
 
 h2 {
-    font-size: 1.5rem;
-    height: 40px;
-    text-align: center;
+  font-size: 1.5rem;
+  height: 40px;
+  text-align: center;
 }
 
 h3 {
-    text-align: center;
+  text-align: center;
 }
 
 h4 {
-    float: right;
-    margin-right: 30px;
+  float: right;
+  margin-right: 30px;
 }
 
 .cell {
-    background-color: hsl(15,31%,75%);
-    flex-basis: 25%;
-    height: 165px;
-    text-align: center;
+  background-color: #645591;
+  flex-basis: 25%;
+  height: 165px;
+  text-align: center;
+}
+.cell .cellName {
+  background-color: #f1eff6;
+  color: #272234;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  width: 90%;
+}
+.cell .cellName:hover {
+  text-decoration: underline;
+}
+.cell .cellImage {
+  border: 1px solid #211c30;
+  height: 100px;
+  margin-top: 5px;
+  width: 100px;
 }
 
-.cell:nth-child(2n) {
-    background-color: hsl(15,31%,45%);
+.cell:nth-child(8n+6), .cell:nth-child(8n+8) {
+  background-color: #9a8fbd;
 }
 
-.tableCellName {
-    background-color: hsl(15,31%,95%);
-    color: hsl(15,31%,15%);
-    border-radius: 5px;
-    display: inline-block;
-    text-decoration: none;
-    width: 90%;
-}
-
-.tableCellName:hover {
-    text-decoration: underline;
-}
-
-.tableCellImage {
-    border: 1px solid hsl(15,31%,17%);
-    height: 100px;
-    margin-top: 5px;
-    width: 100px;
+.cell:nth-child(8n+1), .cell:nth-child(8n+3) {
+  background-color: #9a8fbd;
 }
 
 #composerSection {
-    background-color: hsl(15,31%,60%);
-    border: 2px solid hsl(15,31%,17%);
-    border-radius: 10px;
-    float: left;
-    height: 500px;
-    padding: 10px 15px;
-    margin: 10px;
-    width: 45%;
-}
-
-#composerTable {
-    align-content: space-between;
-    background-color: hsl(15,31%,30%);
-    border: 2px solid hsl(15,31%,17%);
-    display: inline-flex;
-    flex-wrap: wrap;
-    margin: 10px;
-    overflow: auto;
-    width: 95%;
+  background-color: #9a8fbd;
+  border: 2px solid #211c30;
+  border-radius: 10px;
+  float: left;
+  min-height: 500px;
+  padding: 10px 15px;
+  margin: 10px;
+  width: 45%;
 }
 
 #gameSection {
-    background-color: hsl(15,31%,60%);
-    border: 2px solid hsl(15,31%,17%);
-    border-radius: 10px;
-    float: right;
-    padding: 10px 15px;
-    margin: 10px;
-    height: 500px;
-    width: 45%;
+  background-color: #9a8fbd;
+  border: 2px solid #211c30;
+  border-radius: 10px;
+  float: right;
+  padding: 10px 15px;
+  margin: 10px;
+  min-height: 500px;
+  width: 45%;
 }
 
-#gameTable {
-    align-content: flex-start;
-    background-color: hsl(15,31%,30%);
-    border: 2px solid hsl(15,31%,17%);
-    border-collapse: collapse;
-    display: inline-flex;
-    flex-wrap: wrap;
-    margin: 10px;
-    overflow: auto;
-    width: 95%;
+@media only screen and (max-width: 1150px) {
+  #composerSection {
+    width: 70%;
+    margin-left: 12.5%;
+    margin-right: 17%;
+    margin-bottom: 30px;
+  }
+
+  #gameSection {
+    float: left;
+    width: 70%;
+    margin-left: 12.5%;
+    margin-right: 17%;
+  }
+
+  header {
+    height: 80px;
+  }
+
+  h1 {
+    width: 450px;
+  }
 }
-
-@media only screen and (max-width: 1080px) {
-
-    #composerSection {
-        width: 70%;
-        margin-left: 12.5%;
-        margin-right: 15%;
-        margin-bottom: 30px;
-    }
-
-    #gameSection {
-        float: left;
-        width: 70%;
-        margin-left: 12.5%;
-        margin-right: 15%;
-    }
-
-
-    header { 
-        height: 80px;
-    }
-
-    h1 {
-        width: 480px;
-    }
-}
-
 /* Media queries */
-@media only screen and (max-width: 650px) {
-    .cell {
-        flex-basis: 33.33%;
-    }
-}
+@media only screen and (max-width: 725px) {
+  .cell {
+    flex-basis: 33.33%;
+  }
 
+  .cell:nth-child(4n+6), .cell:nth-child(4n+8) {
+    background-color: #645591;
+  }
+
+  .cell:nth-child(8n+1), .cell:nth-child(8n+3) {
+    background-color: #645591;
+  }
+
+  .cell:nth-child(2n) {
+    background-color: #9a8fbd;
+  }
+}
 /* Phone-specific media query */
 @media only screen and (max-device-width: 500px) {
-    html {
-        font-size: 12px;
-    }
+  html {
+    font-size: 12px;
+  }
 }
+
+/*# sourceMappingURL=landing.css.map */

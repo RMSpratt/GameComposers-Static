@@ -1,7 +1,16 @@
 let composerList = new Map([
     ["Akira Fujiwara", null],
     ["Asuka Hayazaki", "Asuka_Hayazaki.jpg"],
-    ["Grant Kirkhope", "Grant_Kirkhope.jpg"]
+    ["David Wise", "David_Wise.jpg"],
+    ["Go Ichinose", "Go_Ichinose.png"],
+    ["Grant Kirkhope", "Grant_Kirkhope.jpg"],
+    ["Junichi Masuda", "Junichi_Masuda.png"],
+    ["Koji Kondo", "Koji_Kondo.jpg"],
+    ["Mahito Yokota", "Mahito_Yokota.jpg"],
+    ["Ryo Nagamatsu", "Ryo_Nagamatsu.jpg"],
+    ["Shiho Fujii", "Shiho_Fujii.jpg"],
+    ["Toby Fox", "Toby_Fox.jpg"],
+    ["Yoko Shimomura", "Yoko_Shimomura.jpg"],
 ]);
 
 
@@ -24,13 +33,13 @@ function loadComposerTable() {
 
         //Fill the cell's name
         let cellName = document.createElement('a');
-        cellName.className = "tableCellName";
+        cellName.className = "cellName";
         cellName.innerHTML = key;
         cellName.href = "./Composers/" + key + ".html";
 
         //Fill the cell's image
         let cellImage = document.createElement('img');
-        cellImage.className = "tableCellImage";
+        cellImage.className = "cellImage";
 
         //If there's a registered image for the composer, display it
         if (value != null) {
@@ -64,13 +73,13 @@ function loadGameTable() {
 
         //Fill the cell's name
         let cellName = document.createElement('a');
-        cellName.className = "tableCellName";
+        cellName.className = "cellName";
         cellName.innerHTML = key;
         cellName.href = "./Games/" + key + ".html";
 
         //Fill the cell's image
         let cellImage = document.createElement('img');
-        cellImage.className = "tableCellImage";
+        cellImage.className = "cellImage";
 
         //If there's a registered image for the composer, display it
         if (value != null) {
