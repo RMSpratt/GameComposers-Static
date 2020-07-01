@@ -1,5 +1,4 @@
 let composerList = new Map([
-    ["Akira Fujiwara", null],
     ["Asuka Hayazaki", "Asuka_Hayazaki.jpg"],
     ["David Wise", "David_Wise.jpg"],
     ["Go Ichinose", "Go_Ichinose.png"],
@@ -7,15 +6,18 @@ let composerList = new Map([
     ["Junichi Masuda", "Junichi_Masuda.png"],
     ["Koji Kondo", "Koji_Kondo.jpg"],
     ["Mahito Yokota", "Mahito_Yokota.jpg"],
+    ["Nobuo Uematsu", "Nobuo Uematsu.jpg"],
     ["Ryo Nagamatsu", "Ryo_Nagamatsu.jpg"],
     ["Shiho Fujii", "Shiho_Fujii.jpg"],
-    ["Toby Fox", "Toby_Fox.jpg"],
+    ["Tee Lopes", "Tee_Lopes.jpg"],
     ["Yoko Shimomura", "Yoko_Shimomura.jpg"],
 ]);
 
 
 let gameList = new Map([
-    ['Banjo-Kazooie', "Banjo-Kazooie.jpg"]
+    ['Banjo-Kazooie', 'Banjo-Kazooie.jpg'],
+    ['Super Mario Galaxy', 'Super_Mario_Galaxy.jpg'],
+    ['Yooka-Laylee', 'Yooka-Laylee.jpg']
 ]);
 
 

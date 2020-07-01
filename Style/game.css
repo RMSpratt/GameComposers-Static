@@ -1,236 +1,224 @@
 @font-face {
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v12/XRXV3I6Li01BKofINeaBTMnFcQ.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Nunito Regular"), local("Nunito-Regular"), url(https://fonts.gstatic.com/s/nunito/v12/XRXV3I6Li01BKofINeaBTMnFcQ.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-
 
 html {
-    font-family: 'Nunito', sans-serif;
-    font-size: 16px;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
 }
 
 body {
-    overflow-x: hidden;
-    width: 100%;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 header {
-    background-color: hsl(211,26%,45%);
-    box-shadow: 0 5px 5px hsl(211,26%,30%);
-    height: 40px;
-    padding: 20px 5px;
-    margin-bottom: 50px;
+  background-color: #557291;
+  box-shadow: 0 5px 5px #394c60;
+  height: 40px;
+  padding: 20px 5px;
+  margin-bottom: 50px;
 }
 
-h1, h2, h3, h5, p {
-    color: hsl(211, 26%, 15%);
+li {
+  margin-left: 20px;
+  margin-bottom: 0.5rem;
 }
 
 main {
-    margin-left: auto;
-    margin-right: auto;
-    width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
 }
 
 p {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 section {
-    background-color: hsl(211,26%,65%);
-    border: 2px solid hsl(211, 26%, 17%);
-    border-radius: 5px;
-    margin-bottom: 30px;
-    padding: 10px 15px;
-}
-
-td {
-    border: 1px solid hsl(211, 26%, 17%);
-    border-collapse: collapse;
-    color: hsl(211, 26%, 17%);
-    padding: 0 5px;
-}
-
-th {
-    border: 1px solid hsl(211, 26%, 17%);
-    border-collapse: collapse;
-    background-color: hsl(211, 26%, 45%);
-    color: hsl(211, 26%, 17%);
-    font-size: 1.25rem;
-    padding: 0 5px;
-    text-align: center;
+  background-color: #8fa5bd;
+  border: 2px solid #1c2630;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  padding: 10px 15px;
 }
 
 tr {
-    height: 30px;
-    width: 95%;
+  height: 30px;
+  width: 95%;
+}
+tr td {
+  border: 1px solid #1c2630;
+  border-collapse: collapse;
+  color: #1c2630;
+  padding: 0 5px;
+}
+tr th {
+  border: 1px solid #1c2630;
+  border-collapse: collapse;
+  background-color: #557291;
+  color: #1c2630;
+  font-size: 1.25rem;
+  padding: 0 5px;
+  text-align: center;
 }
 
 .backLink {
-    background-color: hsl(211,26%,85%);
-    color: hsl(211, 26%, 15%);
-    border-radius: 5px;
-    float: right;
-    margin-right: 30px;
-    padding: 8px 30px;
-    font-size: 1.25rem;
-    text-align: center;
-    text-decoration: none;
+  background-color: #cfd8e3;
+  color: #1c2630;
+  border-radius: 5px;
+  float: right;
+  margin-right: 30px;
+  padding: 8px 30px;
+  font-size: 1.25rem;
+  text-align: center;
+  text-decoration: none;
 }
-
 .backLink:hover {
-    box-shadow: 0 0 8px hsl(211, 26%, 17%);
+  box-shadow: 0 0 8px #1c2630;
 }
 
-
-/* Bio Section Styling */
 .descriptionLong {
-    height: 376px;
-    width: 65%;
+  height: 376px;
+  width: 65%;
 }
 
 .descriptionShort {
-    height: 150px;
-    width: 65%;
+  height: 150px;
+  width: 65%;
 }
 
 .descriptionText {
-    background-color: hsl(211,26%,85%);
-    border-radius: 5px;
-    height: 80%;
-    margin-top: 10px;
-    overflow: auto;
-    padding: 5px;
+  background-color: #cfd8e3;
+  border-radius: 5px;
+  height: 80%;
+  margin-top: 10px;
+  overflow: auto;
+  padding: 5px;
 }
 
-/* Side information table styling */
 #infoTable {
-    background-color: hsl(211,26%,85%);
-    border: 2px solid hsl(211, 26%, 17%);
-    border-radius: 5px;
-    float: right;
-    height: 400px;
-    margin-bottom: 30px;
-    min-height: 400px;
-    width: 25%;
+  background-color: #cfd8e3;
+  border: 2px solid #1c2630;
+  border-radius: 5px;
+  float: right;
+  height: 400px;
+  margin-bottom: 30px;
+  min-height: 400px;
+  width: 25%;
 }
-
-.infoTableTDHeadingCol {
-    font-weight: 600;
-    width: 40%;
+#infoTable .itHeadingCol {
+  font-weight: 600;
+  width: 40%;
 }
-
-.infoTableTDInfoCol {
-    width: 60%;
+#infoTable .itInfoCol {
+  width: 60%;
 }
-
-.infoTableImage {
-    border: 1px solid hsl(211, 26%, 17%);
-    height: 150px;
-    width: 150px;
+#infoTable .itImageRow {
+  height: 160px;
+  text-align: center;
 }
-
-.infoTableImageRow {
-    height: 160px;
-    text-align: center;
+#infoTable .itImageRow .itImage {
+  border: 1px solid #1c2630;
+  height: 150px;
+  width: 150px;
 }
 
 .pageTitle {
-    border-bottom: 1px solid hsl(211, 26%, 17%);
-    display: inline-block;
-    height: 40px;
-    margin-left: 20px;
+  border-bottom: 1px solid #1c2630;
+  display: inline-block;
+  height: 40px;
+  margin-left: 20px;
 }
 
 .properName {
-    font-style: italic;
+  font-style: italic;
 }
 
-.referencesText {
-    background-color: hsl(169,26%,85%);
-    border-radius: 5px;
-    margin-top: 10px;
-    overflow: auto;
-    padding: 5px;
+.referencesList {
+  background-color: #cfd8e3;
+  border-radius: 5px;
+  margin-top: 10px;
+  overflow: auto;
+  padding: 5px;
 }
 
-/* Music Contributors Section Styling */
+.text, h1, h2, h3, h4, li, p {
+  color: #1c2630;
+}
+
 .contributorSection {
-    width: 65%;
+  width: 65%;
 }
 
 .contributorTable {
-    background-color: hsl(211,26%,85%);
-    border: 2px double hsl(211, 26%, 17%);
-    margin-top: 10px;
-    margin-bottom: 20px;
-    width: 100%;
+  background-color: #cfd8e3;
+  border: 2px double #1c2630;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.contributorTable .ctName {
+  width: 50%;
+}
+.contributorTable .ctRole {
+  width: 50%;
 }
 
-.contributorTableName {
-    width: 50%;
-}
-
-.contributorTableRole {
-    width: 50%;
-}
-
-
-/* Media Queries */
 @media only screen and (max-width: 1200px) {
-    .descriptionLong {
-        width: 60%;
-    } 
+  .descriptionLong {
+    width: 60%;
+  }
 
-    .descriptionShort {
-        width: 60%;
-    }
+  .descriptionShort {
+    width: 60%;
+  }
 
-    #infoTable {
-        width: 30%;
-    }
+  #infoTable {
+    width: 30%;
+  }
 
-    .contributorSection {
-        width: 60%;
-    }
+  .contributorSection {
+    width: 60%;
+  }
 }
-
 @media only screen and (max-width: 725px) {
-    
-    .descriptionLong {
-        clear: both;
-        height: initial;
-        margin: 50px auto;
-        width: 90%;
-    }
+  .descriptionLong {
+    clear: both;
+    height: initial;
+    margin: 50px auto;
+    width: 90%;
+  }
 
-    .descriptionShort {
-        clear: both;
-        height: initial;
-        margin-left: auto; 
-        margin-right: auto;
-        width: 90%;
-    }
+  .descriptionShort {
+    clear: both;
+    height: initial;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
 
-    #infoTable {
-        height: initial;
-        margin-bottom: 50px;
-        margin-left: 15%;
-        margin-right: 15%;
-        width: 70%;
-    }
+  #infoTable {
+    height: initial;
+    margin-bottom: 50px;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+  }
 
-    .contributorSection {
-        margin: 50px auto;
-        width: 90%;
-    }
+  .contributorSection {
+    margin: 50px auto;
+    width: 90%;
+  }
 }
+
+/*# sourceMappingURL=game.css.map */

@@ -7,12 +7,16 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+
+//Variables
 $pageColor-lightest: hsl(211,26%,85%);      //Accent colour
 $pageColor-light: hsl(211,26%,65%);         //Accent colour
 $pageColor-medium: hsl(211,26%,45%);        //Accent colour
 $pageColor-dark: hsl(211, 26%, 15%);        //Colour used for text
 $pageColor-shadow: hsl(211,26%,30%);        //Colour used for creating a box-shadow effect
 
+
+//Tag Selectors
 * {
     margin: 0;
     padding: 0;
@@ -38,6 +42,12 @@ header {
 
 h1, h2, h3, h4 {
     @extend .text;
+}
+
+li {
+    @extend .text;
+    margin-left: 20px;
+    margin-bottom: 0.5rem;
 }
 
 main {
@@ -81,6 +91,8 @@ tr {
     }
 }
 
+
+//Class selectors
 .backLink {
     background-color: $pageColor-lightest;
     color: $pageColor-dark;
@@ -97,8 +109,7 @@ tr {
     }
 }
 
-
-/* Bio Section Styling */
+//Bio Section Styling
 .descriptionLong {
     height: 376px;
     width: 65%;
@@ -118,7 +129,8 @@ tr {
     padding: 5px;
 }
 
-/* Side information table styling */
+
+//Side information table styling
 #infoTable {
     background-color: $pageColor-lightest;
     border: 2px solid $pageColor-dark;
@@ -128,26 +140,26 @@ tr {
     margin-bottom: 30px;
     min-height: 400px;
     width: 25%;
-}
 
-.infoTableTDHeadingCol {
-    font-weight: 600;
-    width: 40%;
-}
+    .itHeadingCol {
+        font-weight: 600;
+        width: 40%;
+    }
+    
+    .itInfoCol {
+        width: 60%;
+    }
+    
+    .itImageRow {
+        height: 160px;
+        text-align: center;
 
-.infoTableTDInfoCol {
-    width: 60%;
-}
-
-.infoTableImage {
-    border: 1px solid $pageColor-dark;
-    height: 150px;
-    width: 150px;
-}
-
-.infoTableImageRow {
-    height: 160px;
-    text-align: center;
+        .itImage {
+            border: 1px solid $pageColor-dark;
+            height: 150px;
+            width: 150px;
+        }
+    }
 }
 
 .pageTitle {
@@ -161,7 +173,7 @@ tr {
     font-style: italic;
 }
 
-.referencesText {
+.referencesList {
     background-color: $pageColor-lightest;
     border-radius: 5px;
     margin-top: 10px;
@@ -173,7 +185,7 @@ tr {
     color: $pageColor-dark;
 }
 
-/* Music Contributors Section Styling */
+// Music Contributors Section Styling
 .contributorSection {
     width: 65%;
 }
@@ -184,18 +196,17 @@ tr {
     margin-top: 10px;
     margin-bottom: 20px;
     width: 100%;
+
+    .ctName {
+        width: 50%;
+    }
+    
+    .ctRole {
+        width: 50%;
+    }    
 }
 
-.contributorTableName {
-    width: 50%;
-}
-
-.contributorTableRole {
-    width: 50%;
-}
-
-
-/* Media Queries */
+//Media Queries 
 @media only screen and (max-width: 1200px) {
     .descriptionLong {
         width: 60%;
@@ -215,7 +226,6 @@ tr {
 }
 
 @media only screen and (max-width: 725px) {
-    
     .descriptionLong {
         clear: both;
         height: initial;
