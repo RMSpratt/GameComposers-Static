@@ -38,7 +38,7 @@ function loadComposerTable() {
         let cellName = document.createElement('a');
         cellName.className = "cellName";
         cellName.innerHTML = key;
-        cellName.href = "./docs/Composers/" + key + ".html";
+        cellName.href = "./Pages/Composers/" + key + ".html";
 
         //Fill the cell's image
         let cellImage = document.createElement('img');
@@ -78,7 +78,7 @@ function loadGameTable() {
         let cellName = document.createElement('a');
         cellName.className = "cellName";
         cellName.innerHTML = key;
-        cellName.href = "./docs/Games/" + key + ".html";
+        cellName.href = "./Pages/Games/" + key + ".html";
 
         //Fill the cell's image
         let cellImage = document.createElement('img');
