@@ -3,3 +3,5 @@ This is a small web-based project designed to let me practice my front-end devel
 As for the content of this project, this web app contains information about some video game composers and video game soundtracks that I take inspiration from in my own composing and arranging. I used this project to not only gain some coding experience, but to only learn about some of my musical heroes in more detail. 
 
 I've tried to cite the websites and interviews I used when gathering information as best I could, and each individual webpage has specific sources listed at the bottom of it. 
+
+Active link: https://rmspratt.github.io/GameComposers-Static/
