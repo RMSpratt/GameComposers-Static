@@ -59,7 +59,7 @@ header {
     box-shadow: 0 5px 5px $pageColor-dark;
     height: 40px;
     padding: 20px 5px;
-    margin: 0 auto 50px;
+    margin-bottom: 50px;
 }
 
 h1, h2, h3, p {
@@ -80,21 +80,13 @@ h2 {
     text-align: center;
 }
 
-h3 {
-    text-align: center;
-}
-
-h4 {
-    float: right;
-    margin-right: 30px;
-}
-
 main {
     margin: 0 auto;
     width: 95%;
 }
 
 p {
+    font-size: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -171,7 +163,7 @@ p {
 }
 
 //Media Queries
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1150px), (max-device-width: 725px) {
 
     #composerSection {
         width: 70%;
@@ -196,7 +188,7 @@ p {
     }
 }
 
-@media only screen and (max-width: 725px) {
+@media only screen and (max-width: 725px), (max-device-width: 725px) {
     .cell {
         flex-basis: 33.33%;
     }
@@ -216,7 +208,16 @@ p {
 
 //Query specific to devices with small screens
 @media only screen and (max-device-width: 500px) {
-    html {
-        font-size: 12px;
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+    
+    .cell {
+        flex-basis: 50%;
     }
 }

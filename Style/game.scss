@@ -258,3 +258,15 @@ tr {
         width: 90%;
     }
 }
+
+//Query specific to devices with small screens
+@media only screen and (max-device-width: 500px) {
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+}

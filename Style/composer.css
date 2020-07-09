@@ -183,7 +183,7 @@ tr th {
   width: 10%;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px), (max-device-width: 725px) {
   .bioSectionLong {
     width: 60%;
   }
@@ -196,7 +196,7 @@ tr th {
     width: 30%;
   }
 }
-@media only screen and (max-width: 725px) {
+@media only screen and (max-width: 725px), (max-device-width: 725px) {
   .bioSectionLong {
     clear: both;
     height: initial;
@@ -226,6 +226,12 @@ tr th {
   .worksSection {
     margin: 50px auto;
     width: 90%;
+  }
+  .worksSection th:nth-of-type(3) {
+    display: none;
+  }
+  .worksSection td:nth-of-type(3) {
+    display: none;
   }
 }
 
