@@ -234,5 +234,14 @@ tr th {
     display: none;
   }
 }
+@media only screen and (max-device-width: 500px) {
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+}
 
 /*# sourceMappingURL=composer.css.map */

@@ -178,7 +178,7 @@ tr th {
   width: 50%;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px), (max-device-width: 1200px) {
   .descriptionLong {
     width: 60%;
   }
@@ -195,7 +195,7 @@ tr th {
     width: 60%;
   }
 }
-@media only screen and (max-width: 725px) {
+@media only screen and (max-width: 725px), (max-device-width: 725px) {
   .descriptionLong {
     clear: both;
     height: initial;
@@ -224,13 +224,13 @@ tr th {
     width: 90%;
   }
 }
-@media only screen and (max-device-width: 500px) {
+@media only screen and (max-width: 500px), (max-device-width: 500px) {
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   h2 {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
   }
 }
 
