@@ -8,8 +8,8 @@
 }
 #gameTable, #composerTable {
   align-content: space-between;
-  background-color: #433960;
-  border: 2px solid #211c30;
+  background-color: #394d60;
+  border: 2px solid #1c2630;
   display: inline-flex;
   flex-wrap: wrap;
   margin: 10px;
@@ -23,6 +23,7 @@
 }
 
 body {
+  background-color: #e5ebf0;
   width: 100%;
 }
 
@@ -32,19 +33,19 @@ html {
 }
 
 header {
-  background-color: #645591;
-  box-shadow: 0 5px 5px #433960;
+  background-color: #557391;
+  box-shadow: 0 5px 5px #394d60;
   height: 40px;
   padding: 20px 5px;
   margin: 0 auto 50px;
 }
 
 h1, h2, h3, p {
-  color: #211c30;
+  color: #1c2630;
 }
 
 h1 {
-  border-bottom: 1px solid #211c30;
+  border-bottom: 1px solid #1c2630;
   display: inline-block;
   font-size: 2rem;
   height: 40px;
@@ -66,14 +67,23 @@ h4 {
   margin-right: 30px;
 }
 
+main {
+  margin: 0 auto;
+  width: 95%;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
 .cell {
-  background-color: #645591;
+  background-color: #557391;
   flex-basis: 25%;
   height: 165px;
   text-align: center;
 }
 .cell .cellName {
-  background-color: #f1eff6;
+  background-color: #eff2f6;
   color: #272234;
   border-radius: 5px;
   display: inline-block;
@@ -84,39 +94,55 @@ h4 {
   text-decoration: underline;
 }
 .cell .cellImage {
-  border: 1px solid #211c30;
+  border: 1px solid #1c2630;
   height: 100px;
   margin-top: 5px;
   width: 100px;
 }
 
-.cell:nth-child(8n+6), .cell:nth-child(8n+8) {
-  background-color: #9a8fbd;
+.cell:nth-child(8n+1), .cell:nth-child(8n+3) {
+  background-color: #8fa6bd;
 }
 
-.cell:nth-child(8n+1), .cell:nth-child(8n+3) {
-  background-color: #9a8fbd;
+.cell:nth-child(8n+6), .cell:nth-child(8n+8) {
+  background-color: #8fa6bd;
 }
 
 #composerSection {
-  background-color: #9a8fbd;
-  border: 2px solid #211c30;
+  background-color: #8fa6bd;
+  border: 2px solid #1c2630;
   border-radius: 10px;
   float: left;
-  min-height: 500px;
+  margin-bottom: 50px;
+  min-height: 559px;
   padding: 10px 15px;
-  margin: 10px;
   width: 45%;
 }
 
+#footerSection {
+  background-color: #8fa6bd;
+  border: 2px solid black;
+  border-radius: 10px;
+  clear: both;
+  margin: 30px auto;
+  padding: 10px 15px;
+}
+
+#footerText {
+  background-color: #eff2f6;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px;
+}
+
 #gameSection {
-  background-color: #9a8fbd;
-  border: 2px solid #211c30;
+  background-color: #8fa6bd;
+  border: 2px solid #1c2630;
   border-radius: 10px;
   float: right;
+  margin-bottom: 50px;
+  min-height: 559px;
   padding: 10px 15px;
-  margin: 10px;
-  min-height: 500px;
   width: 45%;
 }
 
@@ -125,7 +151,6 @@ h4 {
     width: 70%;
     margin-left: 12.5%;
     margin-right: 17%;
-    margin-bottom: 30px;
   }
 
   #gameSection {
@@ -143,25 +168,23 @@ h4 {
     width: 450px;
   }
 }
-/* Media queries */
 @media only screen and (max-width: 725px) {
   .cell {
     flex-basis: 33.33%;
   }
 
   .cell:nth-child(4n+6), .cell:nth-child(4n+8) {
-    background-color: #645591;
+    background-color: #557391;
   }
 
   .cell:nth-child(8n+1), .cell:nth-child(8n+3) {
-    background-color: #645591;
+    background-color: #557391;
   }
 
   .cell:nth-child(2n) {
-    background-color: #9a8fbd;
+    background-color: #8fa6bd;
   }
 }
-/* Phone-specific media query */
 @media only screen and (max-device-width: 500px) {
   html {
     font-size: 12px;

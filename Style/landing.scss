@@ -8,11 +8,23 @@
 }
 
 //Variables
-$pageColor-lightest: hsl(255,26%,95%);      //Name background colour
-$pageColor-light: hsl(255,26%,65%);         //Accent colour
-$pageColor-medium: hsl(255,26%,45%);        //Accent colour
-$pageColor-dark: hsl(255,26%,30%);          //Colour used for creating a box-shadow effect and as an accent colour
-$pageColor-darkest: hsl(255, 26%, 15%);     //Colour used for text
+$pageColor-lightest: hsl(210,26%,95%);      //Name and text background colour
+$pageColor-light: hsl(210,26%,65%);         //Accent colour
+$pageColor-medium: hsl(210,26%,45%);        //Accent colour
+$pageColor-dark: hsl(210,26%,30%);          //Colour used for creating a box-shadow effect and as an accent colour
+$pageColor-darkest: hsl(210, 26%, 15%);     //Colour used for text
+
+//Mixins
+@mixin mainSection($floatDirection) {
+    background-color: $pageColor-light;
+    border: 2px solid $pageColor-darkest;
+    border-radius: 10px;
+    float: $floatDirection;
+    margin-bottom: 50px;
+    min-height: 559px;
+    padding: 10px 15px;
+    width: 45%;
+}
 
 //Placeholders
 %table {
@@ -33,6 +45,7 @@ $pageColor-darkest: hsl(255, 26%, 15%);     //Colour used for text
 }
 
 body {
+    background-color: hsl(210,26%,92%);
     width: 100%;
 }
 
@@ -76,6 +89,15 @@ h4 {
     margin-right: 30px;
 }
 
+main {
+    margin: 0 auto;
+    width: 95%;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
 //Class Selectors
 .cell {
     background-color: $pageColor-medium;
@@ -104,41 +126,44 @@ h4 {
     }
 }
 
-//Styling function to alternate table cell colours
-.cell:nth-child(8n + 6), .cell:nth-child(8n + 8) {
-    background-color: $pageColor-light;
-}
 
 //Styling function to alternate table cell colours
 .cell:nth-child(8n + 1), .cell:nth-child(8n + 3) {
     background-color: $pageColor-light;
 }
 
+//Styling function to alternate table cell colours
+.cell:nth-child(8n + 6), .cell:nth-child(8n + 8) {
+    background-color: $pageColor-light;
+}
+
 //ID Selectors
 #composerSection {
-    background-color: $pageColor-light;
-    border: 2px solid $pageColor-darkest;
-    border-radius: 10px;
-    float: left;
-    min-height: 500px;
-    padding: 10px 15px;
-    margin: 10px;
-    width: 45%;
+    @include mainSection(left);
 }
 
 #composerTable {
     @extend %table;
 }
 
-#gameSection {
+#footerSection {
     background-color: $pageColor-light;
-    border: 2px solid $pageColor-darkest;
+    border: 2px solid black;
     border-radius: 10px;
-    float: right;
+    clear: both;
+    margin: 30px auto;
     padding: 10px 15px;
+}
+
+#footerText {
+    background-color: $pageColor-lightest;
+    border-radius: 5px;
+    padding: 5px;
     margin: 10px;
-    min-height: 500px;
-    width: 45%;
+}
+
+#gameSection {
+    @include mainSection(right);
 }
 
 #gameTable {
@@ -152,7 +177,6 @@ h4 {
         width: 70%;
         margin-left: 12.5%;
         margin-right: 17%;
-        margin-bottom: 30px;
     }
 
     #gameSection {

@@ -9,11 +9,11 @@
 
 
 //Variables
-$pageColor-lightest: hsl(211,26%,85%);      //Accent colour
-$pageColor-light: hsl(211,26%,65%);         //Accent colour
-$pageColor-medium: hsl(211,26%,45%);        //Accent colour
-$pageColor-dark: hsl(211, 26%, 15%);        //Colour used for text
-$pageColor-shadow: hsl(211,26%,30%);        //Colour used for creating a box-shadow effect
+$pageColor-lightest: hsl(250,26%,85%);      //Accent colour
+$pageColor-light: hsl(250,26%,65%);         //Accent colour
+$pageColor-medium: hsl(250,26%,45%);        //Accent colour
+$pageColor-dark: hsl(250, 26%, 15%);        //Colour used for text
+$pageColor-shadow: hsl(250,26%,30%);        //Colour used for creating a box-shadow effect
 
 
 //Tag Selectors
@@ -28,6 +28,7 @@ html {
 }
 
 body {
+    background-color: hsl(250,26%,92%);
     overflow-x: hidden;
     width: 100%;
 }
@@ -112,11 +113,13 @@ tr {
 //Bio Section Styling
 .descriptionLong {
     height: 376px;
+    margin-bottom: 50px;
     width: 65%;
 }
 
 .descriptionShort {
     height: 150px;
+    margin-bottom: 50px;
     width: 65%;
 }
 
@@ -137,7 +140,7 @@ tr {
     border-radius: 5px;
     float: right;
     height: 400px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     min-height: 400px;
     width: 25%;
 
@@ -187,6 +190,7 @@ tr {
 
 // Music Contributors Section Styling
 .contributorSection {
+    margin-bottom: 50px;
     width: 65%;
 }
 

@@ -17,13 +17,14 @@ html {
 }
 
 body {
+  background-color: #e7e5f0;
   overflow-x: hidden;
   width: 100%;
 }
 
 header {
-  background-color: #557291;
-  box-shadow: 0 5px 5px #394c60;
+  background-color: #5f5591;
+  box-shadow: 0 5px 5px #3f3960;
   height: 40px;
   padding: 20px 5px;
   margin-bottom: 50px;
@@ -45,8 +46,8 @@ p {
 }
 
 section {
-  background-color: #8fa5bd;
-  border: 2px solid #1c2630;
+  background-color: #968fbd;
+  border: 2px solid #201c30;
   border-radius: 5px;
   margin-bottom: 30px;
   padding: 10px 15px;
@@ -57,24 +58,24 @@ tr {
   width: 95%;
 }
 tr td {
-  border: 1px solid #1c2630;
+  border: 1px solid #201c30;
   border-collapse: collapse;
-  color: #1c2630;
+  color: #201c30;
   padding: 0 5px;
 }
 tr th {
-  border: 1px solid #1c2630;
+  border: 1px solid #201c30;
   border-collapse: collapse;
-  background-color: #557291;
-  color: #1c2630;
+  background-color: #5f5591;
+  color: #201c30;
   font-size: 1.25rem;
   padding: 0 5px;
   text-align: center;
 }
 
 .backLink {
-  background-color: #cfd8e3;
-  color: #1c2630;
+  background-color: #d2cfe3;
+  color: #201c30;
   border-radius: 5px;
   float: right;
   margin-right: 30px;
@@ -84,21 +85,23 @@ tr th {
   text-decoration: none;
 }
 .backLink:hover {
-  box-shadow: 0 0 8px #1c2630;
+  box-shadow: 0 0 8px #201c30;
 }
 
 .descriptionLong {
   height: 376px;
+  margin-bottom: 50px;
   width: 65%;
 }
 
 .descriptionShort {
   height: 150px;
+  margin-bottom: 50px;
   width: 65%;
 }
 
 .descriptionText {
-  background-color: #cfd8e3;
+  background-color: #d2cfe3;
   border-radius: 5px;
   height: 80%;
   margin-top: 10px;
@@ -107,12 +110,12 @@ tr th {
 }
 
 #infoTable {
-  background-color: #cfd8e3;
-  border: 2px solid #1c2630;
+  background-color: #d2cfe3;
+  border: 2px solid #201c30;
   border-radius: 5px;
   float: right;
   height: 400px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   min-height: 400px;
   width: 25%;
 }
@@ -128,13 +131,13 @@ tr th {
   text-align: center;
 }
 #infoTable .itImageRow .itImage {
-  border: 1px solid #1c2630;
+  border: 1px solid #201c30;
   height: 150px;
   width: 150px;
 }
 
 .pageTitle {
-  border-bottom: 1px solid #1c2630;
+  border-bottom: 1px solid #201c30;
   display: inline-block;
   height: 40px;
   margin-left: 20px;
@@ -145,7 +148,7 @@ tr th {
 }
 
 .referencesList {
-  background-color: #cfd8e3;
+  background-color: #d2cfe3;
   border-radius: 5px;
   margin-top: 10px;
   overflow: auto;
@@ -153,16 +156,17 @@ tr th {
 }
 
 .text, h1, h2, h3, h4, li, p {
-  color: #1c2630;
+  color: #201c30;
 }
 
 .contributorSection {
+  margin-bottom: 50px;
   width: 65%;
 }
 
 .contributorTable {
-  background-color: #cfd8e3;
-  border: 2px double #1c2630;
+  background-color: #d2cfe3;
+  border: 2px double #201c30;
   margin-top: 10px;
   margin-bottom: 20px;
   width: 100%;

@@ -16,6 +16,7 @@ let composerList = new Map([
 
 let gameList = new Map([
     ['Banjo-Kazooie', 'Banjo-Kazooie.jpg'],
+    ['Kingdom Hearts', 'Kingdom_Hearts.jpg'],
     ['Super Mario Galaxy', 'Super_Mario_Galaxy.jpg'],
     ['Yooka-Laylee', 'Yooka-Laylee.jpg']
 ]);
