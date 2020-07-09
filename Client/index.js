@@ -38,7 +38,7 @@ function loadComposerTable() {
         let cellName = document.createElement('a');
         cellName.className = "cellName";
         cellName.innerHTML = key;
-        cellName.href = "./Composers/" + key + ".html";
+        cellName.href = "./docs/Composers/" + key + ".html";
 
         //Fill the cell's image
         let cellImage = document.createElement('img');
@@ -46,13 +46,13 @@ function loadComposerTable() {
 
         //If there's a registered image for the composer, display it
         if (value != null) {
-            cellImage.src = "../Images/Composers/" + value;
+            cellImage.src = "./Images/Composers/" + value;
             cellImage.alt = key;
         }
 
         //Else, set it to a placeholder
         else {
-            cellImage.src = "../Images/stock_image.png";
+            cellImage.src = "./Images/stock_image.png";
             cellImage.alt = "no_image";
         }
 
@@ -78,7 +78,7 @@ function loadGameTable() {
         let cellName = document.createElement('a');
         cellName.className = "cellName";
         cellName.innerHTML = key;
-        cellName.href = "./Games/" + key + ".html";
+        cellName.href = "./docs/Games/" + key + ".html";
 
         //Fill the cell's image
         let cellImage = document.createElement('img');
@@ -86,13 +86,13 @@ function loadGameTable() {
 
         //If there's a registered image for the composer, display it
         if (value != null) {
-            cellImage.src = "../Images/Games/" + value;
+            cellImage.src = "./Images/Games/" + value;
             cellImage.alt = key;
         }
 
         //Else, set it to a placeholder
         else {
-            cellImage.src = "../Images/stock_image.png";
+            cellImage.src = "./Images/stock_image.png";
             cellImage.alt = "no_image";
         }
 
