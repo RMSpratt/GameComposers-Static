@@ -80,8 +80,16 @@ h2 {
     text-align: center;
 }
 
+img {
+    border: 1px solid $pageColor-darkest;
+    height: 100px;
+    margin-top: 5px;
+    width: 100px;
+}
+
 main {
     margin: 0 auto;
+    max-width: 1920px;
     width: 95%;
 }
 
@@ -109,13 +117,6 @@ p {
             text-decoration: underline;
         }
     }
-    
-    .cellImage {
-        border: 1px solid $pageColor-darkest;
-        height: 100px;
-        margin-top: 5px;
-        width: 100px;
-    }
 }
 
 
@@ -125,7 +126,7 @@ p {
 }
 
 //Styling function to alternate table cell colours
-.cell:nth-child(8n + 6), .cell:nth-child(8n + 8) {
+.cell:nth-child(8n + 6), .cell:nth-child(8n) {
     background-color: $pageColor-light;
 }
 
@@ -162,8 +163,15 @@ p {
     @extend %table;
 }
 
-//Media Queries
-@media only screen and (max-width: 1150px), (max-device-width: 1150px) {
+//Media query for devices or screens of 1680px in length or larger
+@media only screen and (min-width: 1680px), (min-device-width: 1680px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+//Media query for devices or screens of 1200px in length or smaller
+@media only screen and (max-width: 1200px), (max-device-width: 1200px) {
 
     #composerSection {
         width: 70%;
@@ -178,7 +186,6 @@ p {
         margin-right: 17%;
     }
 
-
     header { 
         height: 80px;
     }
@@ -188,7 +195,8 @@ p {
     }
 }
 
-@media only screen and (max-width: 725px), (max-device-width: 725px) {
+//Media query for devices or screens of 768px in length or smaller
+@media only screen and (max-width: 768px), (max-device-width: 768px) {
     .cell {
         flex-basis: 33.33%;
     }
@@ -201,28 +209,41 @@ p {
         background-color: $pageColor-medium;
     }
 
-    .cell:nth-child(2n) {
+    .cell:nth-child(even) {
         background-color:$pageColor-light;
     }
 }
 
-//Query specific to devices with small screens
-@media only screen and (max-width: 500px), (max-device-width: 500px) {
+//Media query for devices or screens of 520px in length or smaller
+@media only screen and (max-width: 520px), (max-device-width: 520px) {
 
     h1 {
-        font-size: 1.25rem;
-    }
-
-    h2 {
-        font-size: 1.1rem;
+        border-bottom: 0px;
+        text-align: center;
     }
     
+    img {
+        height: 90px;
+        width: 90px;
+    }
+
     .cell {
         flex-basis: 50%;
         height: 140px;
     }
 
-    .cellImage {
+    .cell:nth-child(even) {
+        background-color: $pageColor-medium;
+    }
+
+    .cell:nth-child(4n+2), .cell:nth-child(4n+3) {
+        background-color: $pageColor-light;
+    }
+}
+
+//Media query for devices or screens of 414px in length or smaller
+@media only screen and (max-width: 414px), (max-device-width: 414px) {
+    img {
         height: 80px;
         width: 80px;
     }

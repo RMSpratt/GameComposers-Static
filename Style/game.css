@@ -30,14 +30,21 @@ header {
   margin-bottom: 50px;
 }
 
+h1 {
+  border-bottom: 1px solid #201c30;
+  display: inline-block;
+  height: 40px;
+  margin-left: 20px;
+}
+
 li {
   margin-left: 20px;
   margin-bottom: 0.5rem;
 }
 
 main {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  max-width: 1920px;
   width: 95%;
 }
 
@@ -136,13 +143,6 @@ tr th {
   width: 150px;
 }
 
-.pageTitle {
-  border-bottom: 1px solid #201c30;
-  display: inline-block;
-  height: 40px;
-  margin-left: 20px;
-}
-
 .properName {
   font-style: italic;
 }
@@ -151,8 +151,8 @@ tr th {
   background-color: #d2cfe3;
   border-radius: 5px;
   margin-top: 10px;
-  overflow: auto;
   padding: 5px;
+  overflow-wrap: break-word;
 }
 
 .text, h1, h2, h3, h4, li, p {
@@ -178,6 +178,11 @@ tr th {
   width: 50%;
 }
 
+@media only screen and (min-width: 1680px), (min-device-width: 1680px) {
+  html {
+    font-size: 18px;
+  }
+}
 @media only screen and (max-width: 1200px), (max-device-width: 1200px) {
   .descriptionLong {
     width: 60%;
@@ -195,7 +200,7 @@ tr th {
     width: 60%;
   }
 }
-@media only screen and (max-width: 725px), (max-device-width: 725px) {
+@media only screen and (max-width: 768px), (max-device-width: 768px) {
   .descriptionLong {
     clear: both;
     height: initial;
@@ -224,13 +229,14 @@ tr th {
     width: 90%;
   }
 }
-@media only screen and (max-width: 500px), (max-device-width: 500px) {
+@media only screen and (max-width: 414px), (max-device-width: 414px) {
   h1 {
     font-size: 1.25rem;
   }
 
-  h2 {
-    font-size: 1.1rem;
+  .backLink {
+    font-size: 1rem;
+    padding: 6px 25px;
   }
 }
 

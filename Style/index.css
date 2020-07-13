@@ -58,8 +58,16 @@ h2 {
   text-align: center;
 }
 
+img {
+  border: 1px solid #1c2630;
+  height: 100px;
+  margin-top: 5px;
+  width: 100px;
+}
+
 main {
   margin: 0 auto;
+  max-width: 1920px;
   width: 95%;
 }
 
@@ -85,18 +93,12 @@ p {
 .cell .cellName:hover {
   text-decoration: underline;
 }
-.cell .cellImage {
-  border: 1px solid #1c2630;
-  height: 100px;
-  margin-top: 5px;
-  width: 100px;
-}
 
 .cell:nth-child(8n+1), .cell:nth-child(8n+3) {
   background-color: #8fa6bd;
 }
 
-.cell:nth-child(8n+6), .cell:nth-child(8n+8) {
+.cell:nth-child(8n+6), .cell:nth-child(8n) {
   background-color: #8fa6bd;
 }
 
@@ -138,7 +140,12 @@ p {
   width: 45%;
 }
 
-@media only screen and (max-width: 1150px), (max-device-width: 1150px) {
+@media only screen and (min-width: 1680px), (min-device-width: 1680px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 1200px), (max-device-width: 1200px) {
   #composerSection {
     width: 70%;
     margin-left: 12.5%;
@@ -160,7 +167,7 @@ p {
     width: 450px;
   }
 }
-@media only screen and (max-width: 725px), (max-device-width: 725px) {
+@media only screen and (max-width: 768px), (max-device-width: 768px) {
   .cell {
     flex-basis: 33.33%;
   }
@@ -173,17 +180,19 @@ p {
     background-color: #557391;
   }
 
-  .cell:nth-child(2n) {
+  .cell:nth-child(even) {
     background-color: #8fa6bd;
   }
 }
-@media only screen and (max-width: 500px), (max-device-width: 500px) {
+@media only screen and (max-width: 520px), (max-device-width: 520px) {
   h1 {
-    font-size: 1.25rem;
+    border-bottom: 0px;
+    text-align: center;
   }
 
-  h2 {
-    font-size: 1.1rem;
+  img {
+    height: 90px;
+    width: 90px;
   }
 
   .cell {
@@ -191,7 +200,16 @@ p {
     height: 140px;
   }
 
-  .cellImage {
+  .cell:nth-child(even) {
+    background-color: #557391;
+  }
+
+  .cell:nth-child(4n+2), .cell:nth-child(4n+3) {
+    background-color: #8fa6bd;
+  }
+}
+@media only screen and (max-width: 414px), (max-device-width: 414px) {
+  img {
     height: 80px;
     width: 80px;
   }

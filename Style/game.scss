@@ -41,6 +41,13 @@ header {
     margin-bottom: 50px;
 }
 
+h1 {
+    border-bottom: 1px solid $pageColor-dark;
+    display: inline-block;
+    height: 40px;
+    margin-left: 20px;
+}
+
 h1, h2, h3, h4 {
     @extend .text;
 }
@@ -52,8 +59,8 @@ li {
 }
 
 main {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    max-width: 1920px;
     width: 95%;
 }
 
@@ -165,13 +172,6 @@ tr {
     }
 }
 
-.pageTitle {
-    border-bottom: 1px solid $pageColor-dark;
-    display: inline-block;
-    height: 40px;
-    margin-left: 20px;
-}
-
 .properName {
     font-style: italic;
 }
@@ -180,8 +180,8 @@ tr {
     background-color: $pageColor-lightest;
     border-radius: 5px;
     margin-top: 10px;
-    overflow: auto;
     padding: 5px;
+    overflow-wrap: break-word;
 }
 
 .text {
@@ -210,7 +210,14 @@ tr {
     }    
 }
 
-//Media Queries 
+//Media query for devices or screens of 1680px in length or bigger
+@media only screen and (min-width: 1680px), (min-device-width: 1680px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+//Media query for devices or screens of 1200px in length or smaller
 @media only screen and (max-width: 1200px), (max-device-width: 1200px) {
     .descriptionLong {
         width: 60%;
@@ -229,7 +236,9 @@ tr {
     }
 }
 
-@media only screen and (max-width: 725px), (max-device-width: 725px) {
+//Media query for devices or screens of 768px in length or smaller
+@media only screen and (max-width: 768px), (max-device-width: 768px) {
+
     .descriptionLong {
         clear: both;
         height: initial;
@@ -259,14 +268,15 @@ tr {
     }
 }
 
-//Query specific to devices with small screens
-@media only screen and (max-width: 500px), (max-device-width: 500px) {
+//Media query for devices or screens of 414px in length or smaller
+@media only screen and (max-width: 414px), (max-device-width: 414px) {
 
     h1 {
         font-size: 1.25rem;
     }
 
-    h2 {
-        font-size: 1.1rem;
+    .backLink {
+        font-size: 1rem;
+        padding: 6px 25px;
     }
 }
