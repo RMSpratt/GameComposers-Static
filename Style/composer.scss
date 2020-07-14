@@ -265,7 +265,7 @@ tr {
 //Media query for devices or screens of 414px in length or smaller
 @media only screen and (max-width: 414px), (max-device-width: 414px) {
     h1 {
-        font-size: 1.25rem;
+        width: 70%;
     }
 
     .backLink {
@@ -287,7 +287,9 @@ tr {
     }
 
     //Hide the 'Publisher' column in the Works Table
-    td:nth-of-type(2), th:nth-of-type(2)  {
-        display: none;
+    .worksSection {
+        td:nth-of-type(2), th:nth-of-type(2)  {
+            display: none;
+        }
     }
 }

@@ -224,7 +224,7 @@ tr th {
 }
 @media only screen and (max-width: 414px), (max-device-width: 414px) {
   h1 {
-    font-size: 1.25rem;
+    width: 70%;
   }
 
   .backLink {
@@ -242,7 +242,7 @@ tr th {
     margin: 10px 10px;
   }
 
-  td:nth-of-type(2), th:nth-of-type(2) {
+  .worksSection td:nth-of-type(2), .worksSection th:nth-of-type(2) {
     display: none;
   }
 }

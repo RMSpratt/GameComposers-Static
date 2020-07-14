@@ -236,7 +236,7 @@ tr {
 @media only screen and (min-height: 1200px), (min-device-height: 1200px) {
 
     //Increase the space between sections
-    header, section {
+    header, .contributorSection, .descriptionLong, .descriptionShort {
         margin-bottom: 75px;
     }
 }
@@ -247,20 +247,21 @@ tr {
     .descriptionLong, .descriptionShort  {
         clear: both;
         height: initial;
-        margin: 50px auto;
+        margin-left: auto;
+        margin-right: auto;
         width: 90%;
     }
-    
+
     #infoTable {
         height: initial;
-        margin-bottom: 50px;
         margin-left: 15%;
         margin-right: 15%;
         width: 70%;
     }
 
     .contributorSection {
-        margin: 50px auto;
+        margin-left: auto;
+        margin-right: auto;
         width: 90%;
     }
 }
@@ -269,7 +270,7 @@ tr {
 @media only screen and (max-width: 414px), (max-device-width: 414px) {
 
     h1 {
-        font-size: 1.25rem;
+        width: 70%;
     }
 
     .backLink {
