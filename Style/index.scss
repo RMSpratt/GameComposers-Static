@@ -94,7 +94,6 @@ main {
 }
 
 p {
-    font-size: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -103,6 +102,7 @@ p {
     background-color: $pageColor-medium;
     flex-basis: 25%;
     height: 165px;
+    overflow-y: auto;
     text-align: center;
 
     .cellName {
@@ -121,14 +121,10 @@ p {
 
 
 //Styling function to alternate table cell colours
-.cell:nth-child(8n + 1), .cell:nth-child(8n + 3) {
+.cell:nth-child(8n), .cell:nth-child(8n + 1), .cell:nth-child(8n + 3), .cell:nth-child(8n + 6) {
     background-color: $pageColor-light;
 }
 
-//Styling function to alternate table cell colours
-.cell:nth-child(8n + 6), .cell:nth-child(8n) {
-    background-color: $pageColor-light;
-}
 
 //ID Selectors
 #composerSection {
@@ -163,6 +159,10 @@ p {
     @extend %table;
 }
 
+#headerAltText {
+    display: none;
+}
+
 //Media query for devices or screens of 1680px in length or larger
 @media only screen and (min-width: 1680px), (min-device-width: 1680px) {
     html {
@@ -173,7 +173,13 @@ p {
 //Media query for devices or screens of 1200px in length or smaller
 @media only screen and (max-width: 1200px), (max-device-width: 1200px) {
 
-    #composerSection {
+    h1 {
+        border-bottom: 0px;
+        text-align: center;
+        width: 95%;
+    }
+
+    #composerSection, #gameSection {
         width: 70%;
         margin-left: 12.5%;
         margin-right: 17%;
@@ -181,17 +187,6 @@ p {
 
     #gameSection {
         float: left;
-        width: 70%;
-        margin-left: 12.5%;
-        margin-right: 17%;
-    }
-
-    header { 
-        height: 80px;
-    }
-
-    h1 {
-        width: 450px;
     }
 }
 
@@ -208,8 +203,23 @@ p {
     }
 }
 
+@media only screen and (max-width: 900px), (max-device-width: 900px) {
+    header {
+        height: 80px;
+    }
+
+    #headerText {
+    display: none;
+    }
+
+    #headerAltText {
+        display: inline-block;
+    }
+}
+
 //Media query for devices or screens of 768px in length or smaller
 @media only screen and (max-width: 768px), (max-device-width: 768px) {
+
     .cell {
         flex-basis: 33.33%;
     }
@@ -227,21 +237,11 @@ p {
 @media only screen and (max-width: 520px), (max-device-width: 520px) {
 
     h1 {
-        border-bottom: 0px;
-        font-size: 1.8rem;
-        margin: 0 auto;
-        text-align: center;
-        width: 95%;
+        font-size: 1.6rem;
     }
     
-    img {
-        height: 85px;
-        width: 85px;
-    }
-
     .cell {
         flex-basis: 50%;
-        height: 140px;
     }
 
     .cell:nth-child(even) {
@@ -255,6 +255,10 @@ p {
 
 //Media query for devices or screens of 414px in length or smaller
 @media only screen and (max-width: 414px), (max-device-width: 414px) {
+    h1 {
+        font-size: 1.4rem;
+    }
+
     h2 {
         font-size: 1.25rem;
     }

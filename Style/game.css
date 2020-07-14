@@ -37,6 +37,12 @@ h1 {
   margin-left: 20px;
 }
 
+img {
+  border: 1px solid #201c30;
+  height: 150px;
+  width: 150px;
+}
+
 li {
   margin-left: 20px;
   margin-bottom: 0.5rem;
@@ -137,11 +143,6 @@ tr th {
   height: 160px;
   text-align: center;
 }
-#infoTable .itImageRow .itImage {
-  border: 1px solid #201c30;
-  height: 150px;
-  width: 150px;
-}
 
 .properName {
   font-style: italic;
@@ -225,7 +226,7 @@ tr th {
 }
 @media only screen and (max-width: 414px), (max-device-width: 414px) {
   h1 {
-    width: 70%;
+    font-size: 1.4rem;
   }
 
   .backLink {
@@ -234,6 +235,10 @@ tr th {
   }
 }
 @media only screen and (max-width: 360px), (max-device-width: 360px) {
+  h1 {
+    font-size: 1.25rem;
+  }
+
   img {
     height: 125px;
     width: 125px;

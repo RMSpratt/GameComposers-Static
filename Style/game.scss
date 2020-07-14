@@ -52,6 +52,12 @@ h1, h2, h3, h4 {
     @extend .text;
 }
 
+img {
+    border: 1px solid $pageColor-dark;
+    height: 150px;
+    width: 150px;
+}
+
 li {
     @extend .text;
     margin-left: 20px;
@@ -163,12 +169,6 @@ tr {
     .itImageRow {
         height: 160px;
         text-align: center;
-
-        .itImage {
-            border: 1px solid $pageColor-dark;
-            height: 150px;
-            width: 150px;
-        }
     }
 }
 
@@ -270,7 +270,7 @@ tr {
 @media only screen and (max-width: 414px), (max-device-width: 414px) {
 
     h1 {
-        width: 70%;
+        font-size: 1.4rem;
     }
 
     .backLink {
@@ -281,6 +281,10 @@ tr {
 
 //Media query for devices or screens of 360px in length or smaller
 @media only screen and (max-width: 360px), (max-device-width: 360px) {
+
+    h1 {
+        font-size: 1.25rem;
+    }
 
     img {
         height: 125px;

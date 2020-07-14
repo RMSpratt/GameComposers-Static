@@ -224,7 +224,7 @@ tr th {
 }
 @media only screen and (max-width: 414px), (max-device-width: 414px) {
   h1 {
-    width: 70%;
+    font-size: 1.4rem;
   }
 
   .backLink {
@@ -233,6 +233,10 @@ tr th {
   }
 }
 @media only screen and (max-width: 360px), (max-device-width: 360px) {
+  h1 {
+    font-size: 1.25rem;
+  }
+
   img {
     height: 125px;
     width: 125px;
