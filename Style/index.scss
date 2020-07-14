@@ -139,7 +139,7 @@ p {
     @extend %table;
 }
 
-#footerSection {
+#aboutSection {
     background-color: $pageColor-light;
     border: 2px solid black;
     border-radius: 10px;
@@ -148,7 +148,7 @@ p {
     padding: 10px 15px;
 }
 
-#footerText {
+#aboutText {
     background-color: $pageColor-lightest;
     border-radius: 5px;
     padding: 5px;
@@ -195,17 +195,26 @@ p {
     }
 }
 
+//Media query for devices or screens of 1200px in height or larger
+@media only screen and (min-height: 1200px), (min-device-height: 1200px) {
+
+    //Increase the space between sections
+    header {
+        margin-bottom: 75px;
+    }
+
+    .composerSection, .gameSection {
+        margin-bottom: 75px;
+    }
+}
+
 //Media query for devices or screens of 768px in length or smaller
 @media only screen and (max-width: 768px), (max-device-width: 768px) {
     .cell {
         flex-basis: 33.33%;
     }
 
-    .cell:nth-child(4n + 6), .cell:nth-child(4n + 8) {
-        background-color: $pageColor-medium;
-    }
-    
-    .cell:nth-child(8n + 1), .cell:nth-child(8n + 3) {
+    .cell:nth-child(4n + 6), .cell:nth-child(4n + 8), .cell:nth-child(8n + 1), .cell:nth-child(8n + 3) {
         background-color: $pageColor-medium;
     }
 
@@ -219,7 +228,10 @@ p {
 
     h1 {
         border-bottom: 0px;
+        font-size: 1.8rem;
+        margin: 0 auto;
         text-align: center;
+        width: 95%;
     }
     
     img {
@@ -243,6 +255,10 @@ p {
 
 //Media query for devices or screens of 414px in length or smaller
 @media only screen and (max-width: 414px), (max-device-width: 414px) {
+    h2 {
+        font-size: 1.25rem;
+    }
+
     img {
         height: 80px;
         width: 80px;

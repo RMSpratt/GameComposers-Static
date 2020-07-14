@@ -135,11 +135,6 @@ tr th {
 #infoTable .itInfoCol {
   width: 60%;
 }
-#infoTable .itImage {
-  border: 1px solid #1c302d;
-  height: 150px;
-  width: 150px;
-}
 #infoTable .itImageRow {
   height: 160px;
   text-align: center;
@@ -169,10 +164,7 @@ tr th {
   margin-bottom: 20px;
   width: 100%;
 }
-.worksTable .wtName {
-  width: 35%;
-}
-.worksTable .wtPublisher {
+.worksTable .wtName, .worksTable .wtPublisher {
   width: 35%;
 }
 .worksTable .wtRole {
@@ -189,11 +181,7 @@ tr th {
   }
 }
 @media only screen and (max-width: 1200px), (max-device-width: 1200px) {
-  .bioSectionLong {
-    width: 60%;
-  }
-
-  .bioSectionShort {
+  .bioSectionLong, .bioSectionShort {
     width: 60%;
   }
 
@@ -201,18 +189,16 @@ tr th {
     width: 30%;
   }
 }
+@media only screen and (min-height: 1200px), (min-device-height: 1200px) {
+  header, section {
+    margin-bottom: 75px;
+  }
+}
 @media only screen and (max-width: 768px), (max-device-width: 768px) {
-  .bioSectionLong {
+  .bioSectionLong, .bioSectionShort {
     clear: both;
     height: initial;
     padding-bottom: 20px;
-    margin: 50px auto;
-    width: 90%;
-  }
-
-  .bioSectionShort {
-    clear: both;
-    height: initial;
     margin: 50px auto;
     width: 90%;
   }
@@ -232,10 +218,7 @@ tr th {
     margin: 50px auto;
     width: 90%;
   }
-  .worksSection td:nth-of-type(3) {
-    display: none;
-  }
-  .worksSection th:nth-of-type(3) {
+  .worksSection td:nth-of-type(3), .worksSection th:nth-of-type(3) {
     display: none;
   }
 }
@@ -250,10 +233,16 @@ tr th {
   }
 }
 @media only screen and (max-width: 360px), (max-device-width: 360px) {
-  .worksSection td:nth-of-type(2) {
-    display: none;
+  img {
+    height: 125px;
+    width: 125px;
   }
-  .worksSection th:nth-of-type(2) {
+
+  section {
+    margin: 10px 10px;
+  }
+
+  td:nth-of-type(2), th:nth-of-type(2) {
     display: none;
   }
 }

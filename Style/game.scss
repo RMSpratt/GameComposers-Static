@@ -219,13 +219,9 @@ tr {
 
 //Media query for devices or screens of 1200px in length or smaller
 @media only screen and (max-width: 1200px), (max-device-width: 1200px) {
-    .descriptionLong {
+    .descriptionLong, .descriptionShort {
         width: 60%;
     } 
-
-    .descriptionShort {
-        width: 60%;
-    }
 
     #infoTable {
         width: 30%;
@@ -236,24 +232,25 @@ tr {
     }
 }
 
+//Media query for devices or screens of 1200px in height or larger
+@media only screen and (min-height: 1200px), (min-device-height: 1200px) {
+
+    //Increase the space between sections
+    header, section {
+        margin-bottom: 75px;
+    }
+}
+
 //Media query for devices or screens of 768px in length or smaller
 @media only screen and (max-width: 768px), (max-device-width: 768px) {
 
-    .descriptionLong {
+    .descriptionLong, .descriptionShort  {
         clear: both;
         height: initial;
         margin: 50px auto;
         width: 90%;
     }
-
-    .descriptionShort {
-        clear: both;
-        height: initial;
-        margin-left: auto; 
-        margin-right: auto;
-        width: 90%;
-    }
-
+    
     #infoTable {
         height: initial;
         margin-bottom: 50px;
@@ -279,4 +276,17 @@ tr {
         font-size: 1rem;
         padding: 6px 25px;
     }
+}
+
+//Media query for devices or screens of 360px in length or smaller
+@media only screen and (max-width: 360px), (max-device-width: 360px) {
+
+    img {
+        height: 125px;
+        width: 125px;
+    }
+
+    section {
+        margin: 10px 10px;
+    }    
 }

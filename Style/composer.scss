@@ -159,12 +159,6 @@ tr {
         width: 60%;
     }
 
-    .itImage {
-        border: 1px solid $pageColor-dark;
-        height: 150px;
-        width: 150px;
-    }
-
     .itImageRow {
         height: 160px;
         text-align: center;
@@ -195,11 +189,7 @@ tr {
     margin-bottom: 20px;
     width: 100%;
 
-    .wtName {
-        width: 35%;
-    }
-    
-    .wtPublisher {
+    .wtName, .wtPublisher {
         width: 35%;
     }
     
@@ -222,33 +212,30 @@ tr {
 
 //Media query for devices or screens of 1200px in length or smaller
 @media only screen and (max-width: 1200px), (max-device-width: 1200px) {
-    .bioSectionLong {
+    .bioSectionLong, .bioSectionShort {
         width: 60%;
     } 
-
-    .bioSectionShort {
-        width: 60%;
-    }
-
     #infoTable {
         width: 30%;
+    }
+}
+
+//Media query for devices or screens of 1200px in height or larger
+@media only screen and (min-height: 1200px), (min-device-height: 1200px) {
+
+    //Increase the space between sections
+    header, section {
+        margin-bottom: 75px;
     }
 }
 
 //Media query for devices or screens of 768px in length or smaller
 @media only screen and (max-width: 768px), (max-device-width: 768px) {
     
-    .bioSectionLong {
+    .bioSectionLong, .bioSectionShort{
         clear: both;
         height: initial;
         padding-bottom: 20px;
-        margin: 50px auto;
-        width: 90%;
-    }
-
-    .bioSectionShort {
-        clear: both;
-        height: initial;
         margin: 50px auto;
         width: 90%;
     }
@@ -269,11 +256,7 @@ tr {
         width: 90%;
 
         //Hide the 'Contributor Role' column in the Works Table
-        td:nth-of-type(3) {
-            display: none;
-        }
-
-        th:nth-of-type(3) {
+        td:nth-of-type(3), th:nth-of-type(3) {
             display: none;
         }
     }
@@ -294,14 +277,17 @@ tr {
 //Media query for devices or screens of 360px in length or smaller
 @media only screen and (max-width: 360px), (max-device-width: 360px) {
 
-    //Hide the 'Publisher' column in the Works Table
-    .worksSection {
-        td:nth-of-type(2) {
-            display: none;
-        }
+    img {
+        height: 125px;
+        width: 125px;
+    }
 
-        th:nth-of-type(2) {
-            display: none;
-        }
+    section {
+        margin: 10px 10px;
+    }
+
+    //Hide the 'Publisher' column in the Works Table
+    td:nth-of-type(2), th:nth-of-type(2)  {
+        display: none;
     }
 }

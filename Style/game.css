@@ -184,11 +184,7 @@ tr th {
   }
 }
 @media only screen and (max-width: 1200px), (max-device-width: 1200px) {
-  .descriptionLong {
-    width: 60%;
-  }
-
-  .descriptionShort {
+  .descriptionLong, .descriptionShort {
     width: 60%;
   }
 
@@ -200,19 +196,16 @@ tr th {
     width: 60%;
   }
 }
+@media only screen and (min-height: 1200px), (min-device-height: 1200px) {
+  header, section {
+    margin-bottom: 75px;
+  }
+}
 @media only screen and (max-width: 768px), (max-device-width: 768px) {
-  .descriptionLong {
+  .descriptionLong, .descriptionShort {
     clear: both;
     height: initial;
     margin: 50px auto;
-    width: 90%;
-  }
-
-  .descriptionShort {
-    clear: both;
-    height: initial;
-    margin-left: auto;
-    margin-right: auto;
     width: 90%;
   }
 
@@ -237,6 +230,16 @@ tr th {
   .backLink {
     font-size: 1rem;
     padding: 6px 25px;
+  }
+}
+@media only screen and (max-width: 360px), (max-device-width: 360px) {
+  img {
+    height: 125px;
+    width: 125px;
+  }
+
+  section {
+    margin: 10px 10px;
   }
 }
 
