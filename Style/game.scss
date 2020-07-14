@@ -219,6 +219,7 @@ tr {
 
 //Media query for devices or screens of 1200px in length or smaller
 @media only screen and (max-width: 1200px), (max-device-width: 1200px) {
+
     .descriptionLong, .descriptionShort {
         width: 60%;
     } 
@@ -244,7 +245,7 @@ tr {
 //Media query for devices or screens of 768px in length or smaller
 @media only screen and (max-width: 768px), (max-device-width: 768px) {
 
-    .descriptionLong, .descriptionShort  {
+    .descriptionLong, .descriptionShort {
         clear: both;
         height: initial;
         margin-left: auto;
@@ -271,11 +272,22 @@ tr {
 
     h1 {
         font-size: 1.4rem;
+        margin-left: 5%;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        text-align: center;
     }
 
     .backLink {
         font-size: 1rem;
+        margin-right: 5%;
         padding: 6px 25px;
+    }
+
+    section {
+        padding: 10px 10px;
     }
 }
 
@@ -283,15 +295,15 @@ tr {
 @media only screen and (max-width: 360px), (max-device-width: 360px) {
 
     h1 {
-        font-size: 1.25rem;
+        font-size: 1.2rem;
+    }
+
+    th {
+        font-size: 1.1rem;
     }
 
     img {
         height: 125px;
         width: 125px;
     }
-
-    section {
-        margin: 10px 10px;
-    }    
 }

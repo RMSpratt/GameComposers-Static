@@ -225,16 +225,27 @@ tr th {
 @media only screen and (max-width: 414px), (max-device-width: 414px) {
   h1 {
     font-size: 1.4rem;
+    margin-left: 5%;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  section {
+    padding: 10px 10px;
   }
 
   .backLink {
     font-size: 1rem;
+    margin-right: 5%;
     padding: 6px 25px;
   }
 }
 @media only screen and (max-width: 360px), (max-device-width: 360px) {
   h1 {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
   }
 
   img {
@@ -242,8 +253,8 @@ tr th {
     width: 125px;
   }
 
-  section {
-    margin: 10px 10px;
+  th {
+    font-size: 1.1rem;
   }
 
   .worksSection td:nth-of-type(2), .worksSection th:nth-of-type(2) {
