@@ -14,7 +14,6 @@
   flex-wrap: wrap;
   margin: 10px;
   overflow: auto;
-  width: 95%;
 }
 
 * {
@@ -105,7 +104,7 @@ p {
   float: left;
   margin-bottom: 50px;
   min-height: 559px;
-  padding: 10px 15px;
+  padding: 10px;
   width: 45%;
 }
 
@@ -114,8 +113,8 @@ p {
   border: 2px solid black;
   border-radius: 10px;
   clear: both;
-  margin: 30px auto;
-  padding: 10px 15px;
+  margin-bottom: 30px;
+  padding: 10px 10px;
 }
 
 #aboutText {
@@ -132,7 +131,7 @@ p {
   float: right;
   margin-bottom: 50px;
   min-height: 559px;
-  padding: 10px 15px;
+  padding: 10px;
   width: 45%;
 }
 
@@ -155,7 +154,7 @@ p {
   #composerSection, #gameSection {
     width: 70%;
     margin-left: 12.5%;
-    margin-right: 17%;
+    margin-right: 17.5%;
   }
 
   #gameSection {
@@ -212,6 +211,12 @@ p {
 
   .cell:nth-child(4n+2), .cell:nth-child(4n+3) {
     background-color: #8fa6bd;
+  }
+
+  #composerSection, #gameSection {
+    width: 80%;
+    margin-left: 7.5%;
+    margin-right: 12.5%;
   }
 }
 @media only screen and (max-width: 414px), (max-device-width: 414px) {
