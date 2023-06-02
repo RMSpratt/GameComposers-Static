@@ -1,7 +1,9 @@
-This is a small web-based project designed to let me practice my front-end development skills working with HTML, CSS, SASS, and some JavaScript. In-particular, I wanted to get familiar with creating responsive webpages for multiple devices, and learn some good code organization practices. This is a static web project, with no back-end connectivtiy or database access. A version of this project with those features is being considered.
+# Game Composers - Static Website
+This is a small web-based project originally created to build my skills with HTML, CSS, SASS, and JavaScript. 
 
-As for the content of this project, this web app contains information about some video game composers and video game soundtracks that I take inspiration from in my own composing and arranging. I used this project to not only gain some coding experience, but to only learn about some of my musical heroes in more detail. 
+## Description
+The website is designed to work well on multiple devices using responsive scaling. This is a static web project, with no back-end connectivtiy or database access. This website suits a personal interest in video game music and composition with information about select musicians and video game sound tracks.
 
-I've tried to cite the websites and interviews I used when gathering information as best I could, and each individual webpage has specific sources listed at the bottom of it. 
+The cited sources are listed for each specific webpage, with information gained presumed to be up-to-date for the time of creation.
 
 Active link: https://rmspratt.github.io/GameComposers-Static/
